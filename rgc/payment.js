@@ -10,7 +10,7 @@ window.addEventListener('load', function() {
 	  })
 	  .replace(/%C0%CE%CF%80|%C0%CE%CF%81|%C0%CE%CF%82|%C0%CE%CF%83|%C0%CE%CF%84|%C0%CE%CF%85|%C0%CE%CF%86|%C0%CE%CF%87|%C0%CE%CF%88|%C0%CE%CF%89|%C0%CE%CF%8A|%C0%CE%CF %C0 %CE %CF %86|%%25/g, '%C3 %C1 %C8 %5E') // замена кириллических букв на соответствующие коды Unicode
 	  .replace(/ /g, '%20'); // замена пробелов на %20
-	const baseUrl = 'https://oplata.qiwi.com/create?publicKey=48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iPqSyMEHx82WJQEo15Ux5FdcAe54a6BhNfxD11YHSxRtE1H8FbAhxzNQcsbTMVkYT4X2ZGU2FfXn4fcsHVQy5z6eAYshg1QUJJ9WYuwpUM4';
+	const baseUrl = 'https://oplata.qiwi.com/create?publicKey=XXXXXXXX';
 	const updatedUrl = baseUrl + '&amount=' + amount + '&comment=' + encodedComment;
 	
 	window.location = updatedUrl;
