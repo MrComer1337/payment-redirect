@@ -15,5 +15,3 @@ window.addEventListener('load', function() {
 	
 	window.location = updatedUrl;
 });
-
-
