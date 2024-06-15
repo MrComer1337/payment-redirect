@@ -8,7 +8,7 @@ window.addEventListener('load', function() {
 		const code = char.charCodeAt(0).toString(16);
 		return '%%' + code.padStart(4, '0');
 	  })
-	  .replace(/%C0%CE%CF%80|%C0%CE%CF%81|%C0%CE%CF%82|%C0%CE%CF%83|%C0%CE%CF%84|%C0%CE%CF%85|%C0%CE%CF%86|%C0%CE%CF%87|%C0%CE%CF%88|%C0%CE%CF%89|%C0%CE%CF%8A|%C0%CE%CF %C0 %CE %CF %86|%%25/g, '%C3 %C1 %C8 %5E') // замена кириллических букв на соответствующие коды Unicode
+	  .replace(/%C0%CE%CF%80|%C0%CE%CF%81|%C0%CE%CF%82|%C0%CE%CF%83|%C0%CE%CF%84|%C0%CE%CF%85|%C0%CE%CF%86|%C0%CE%CF%87|%C0%CE%CF%88|%C0%CE%CF%89|%C0%CE%CF%8A|%C0%CE%CF %C0 %CE %CF %86|%%25/g, '%C3 %C1 %C8 %5E')
 	  .replace(/ /g, '%20'); // замена пробелов на %20
 	const baseUrl = 'https://oplata.qiwi.com/create?publicKey=XXXXXXXX';
 	const updatedUrl = baseUrl + '&amount=' + amount + '&comment=' + encodedComment;
