@@ -4,7 +4,7 @@ window.addEventListener('load', function() {
 	const comment = urlParams.get('comment');
 	
 	const encodedComment = encodeURIComponent(comment)
-	  .replace(/[^a-zA-Z0-9\s]/g, function (char) { // замена всех других символов на соответствующие коды Unicode
+	  .replace(/[^a-zA-Z0-9\s]/g, function (char) {
 		const code = char.charCodeAt(0).toString(16);
 		return '%%' + code.padStart(4, '0');
 	  })
